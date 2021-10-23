@@ -1,8 +1,9 @@
-Summary of Uncle Bob's lecture of "Clean Code" (some parts are taken from the book "CLean Code" also):
+# Summary of Uncle Bob's lecture of "Clean Code" (some parts are taken from the book "CLean Code" also):
 
-Two reasons of wanting to write clean code:
+## Two reasons of wanting to write clean code:
 1. You are a programmer.
 2. You want to be a better programmer.
+
 
 ## General rules
 1. Follow standard conventions.
@@ -31,6 +32,17 @@ Two reasons of wanting to write clean code:
 6. Avoid negative conditionals.
 
 ## Names rules
+Reveal your intent through names.
+Variable name length are proportional to the scope size.
+  If a variable is in a small scope, small name is preffered.
+  Long variable name in long scopes. 
+
+But it will be opposite for Functions name:
+Function names are inversely proportional to the scope size.
+  Large scope function means it will be used more frequently, so smaller name is preffered.
+  
+Name of classes is similar as functions.
+
 1. Choose descriptive and unambiguous names.
 2. Make meaningful distinction.
 3. Use pronounceable names.
@@ -95,7 +107,7 @@ Comments are actually failure, failure to make the code express itself. They sho
 
 Formatting
 
-
+File size is not a function of project size.
 
 
 
