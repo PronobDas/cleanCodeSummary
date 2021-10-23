@@ -4,7 +4,7 @@
 1. You are a programmer.
 2. You want to be a better programmer.
 
-
+           
 ## General rules
 1. Follow standard conventions.
 2. Keep it simple stupid. Simpler is always better. Reduce complexity as much as possible.
@@ -12,8 +12,30 @@
 4. Always find root cause. Always look for the root cause of a problem.
 
 
-## Long code is not Good Code
-
+#### Long code is not Good Code
+#### DRY Principle (Don't Repeat Yourself)
+#### Expectations / We will Not Ship Shit.
+    Before uploading some code in the internet or publishing something, we should make sure that the code works.
+#### We will always be ready.
+#### Stable Productivity.
+#### Inexpensive Adaptability / The software must be changeable.
+    Software = Soft + Ware(=Product) = Changable product.
+    Softwares should be easy to change.
+    If it is not easy, then it is just an another form of Hardware.
+#### Continuous Improvement / The code should improve over time.
+#### Fearless Competence / Conquer the fear with Test.
+    Do not hesitate to use/update others code, we should clean the mess if it has 
+    any, doesn't matter who created that. Unless that system/software will rot.
+    
+    We should conqure this fear with test.
+#### We will not dump on QA / QA will find nothing.
+    QA should not find nothing, as the programmers should ensure that everything works fine.
+    We should do "Automation" for testing.
+#### We cover for each other / Teamwork.
+    Pairing (Pair Programming)
+#### Honest Estimates
+    
+    
 
 ## Design rules
 1. Keep configurable data at high levels.
@@ -31,15 +53,21 @@
 5. Avoid logical dependency. Don't write methods which works correctly depending on something else in the same class.
 6. Avoid negative conditionals.
 
+
+
 ## Names rules
 Reveal your intent through names.
+
 Variable name length are proportional to the scope size.
-  If a variable is in a small scope, small name is preffered.
-  Long variable name in long scopes. 
+
+    If a variable is in a small scope, small name is preffered.
+    Long variable name in long scopes. 
 
 But it will be opposite for Functions name:
+
 Function names are inversely proportional to the scope size.
-  Large scope function means it will be used more frequently, so smaller name is preffered.
+
+     Large scope function means it will be used more frequently, so smaller name is preffered.
   
 Name of classes is similar as functions.
 
@@ -51,14 +79,6 @@ Name of classes is similar as functions.
 6. Avoid encodings. Don't append prefixes or type information.
 
 
-Good Code / Refactored Function
-  Functions should not be 100 lines long.
-  Functions should hardly ever be 20 lines long.
-  
-Shrunk Code / The Rules of Functions
-  1st rule: Functions should be small
-  2nd rule: They should be smaller than that.
-
 ## Functions rules
 1. Small.
 2. Do one thing.
@@ -67,29 +87,39 @@ Shrunk Code / The Rules of Functions
 5. Have no side effects.
 6. Don't use flag arguments. Split method into several independent methods that can be called from the client without the flag.
 
+Good Code / Refactored Function
 
+    Functions should not be 100 lines long.
+    Functions should hardly ever be 20 lines long.
+  
+Shrunk Code / The Rules of Functions
+
+    1st rule:   Functions should be small
+    2nd rule:   They should be smaller than that.
 
 Prose Code / Arguments
-  Keep the argument count between 2-3
-  never use a arg type of boolean.
 
+    Keep the argument count between 2-3
+    Never use a arg type of boolean, use 2 different functions instead.
+    
 Avoid Switch Statements / Problems and Evolution of some programming languages
-  Because they break.
+
+    Because they break.
   
+Output Arguments has No Side Effects / Garbage Collection
 
-Output Arguments No Side Effects / Garbage Collection
-
-Side effect functions come in pair. like open and close.
+Side effect functions come in pair, like open and close.
 
 No Side Effects / Using Lambda
+
 No Side Effects / Command and Query Separation
-  Anything that returns a value by default they does not change the system-- COnvention.
-  Whoever returns void changes the system.
+
+    Convention: Anything that returns a value by default they does not change the system.
+    Whoever returns void changes the system.
   
 No Side Effects / Prefer Exceptions to returning error codes
-  Inside in try block, we should keep only the try block, nothing others as prefix or suffix.
-  
-DRY Principle (Don't Repeat Yourself)
+
+    Inside in try block, we should keep only the try block, nothing others as prefix or suffix.
 
 
 ## Comments rules
