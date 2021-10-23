@@ -11,72 +11,30 @@
 3. Boy scout rule: Leave the campground cleaner than you found it.
 4. Always find root cause. Always look for the root cause of a problem.
 
-
-#### Long code is not Good Code
-#### DRY Principle (Don't Repeat Yourself)
-#### Expectations / We will Not Ship Shit.
-    Before uploading some code in the internet or publishing something, we should make sure that the code works.
-#### We will always be ready.
-#### Stable Productivity.
-#### Inexpensive Adaptability / The software must be changeable.
-    Software = Soft + Ware(=Product) = Changable product.
-    Softwares should be easy to change.
-    If it is not easy, then it is just an another form of Hardware.
-#### Continuous Improvement / The code should improve over time.
-#### Fearless Competence / Conquer the fear with Test.
-    Do not hesitate to use/update others code, we should clean the mess if it has 
-    any, doesn't matter who created that. Unless that system/software will rot.
-    
-    We should conqure this fear with test.
-#### We will not dump on QA / QA will find nothing.
-    QA should not find nothing, as the programmers should ensure that everything works fine.
-    We should do "Automation" for testing.
-#### We cover for each other / Teamwork.
-    Pairing (Pair Programming)
-#### Honest Estimates
-    
-    
-
-## Design rules
-1. Keep configurable data at high levels.
-2. Prefer polymorphism to if/else or switch/case.
-3. Separate multi-threading code.
-4. Prevent over-configurability.
-5. Use dependency injection.
-6. Follow Law of Demeter. A class should know only its direct dependencies.
-
-## Understandability tips
-1. Be consistent. If you do something a certain way, do all similar things in the same way.
-2. Use explanatory variables.
-3. Encapsulate boundary conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.
-4. Prefer dedicated value objects to primitive type.
-5. Avoid logical dependency. Don't write methods which works correctly depending on something else in the same class.
-6. Avoid negative conditionals.
-
-
-
 ## Names rules
-Reveal your intent through names.
-
-Variable name length are proportional to the scope size.
-
-    If a variable is in a small scope, small name is preffered.
-    Long variable name in long scopes. 
-
-But it will be opposite for Functions name:
-
-Function names are inversely proportional to the scope size.
-
-     Large scope function means it will be used more frequently, so smaller name is preffered.
-  
-Name of classes is similar as functions.
-
 1. Choose descriptive and unambiguous names.
 2. Make meaningful distinction.
 3. Use pronounceable names.
 4. Use searchable names.
 5. Replace magic numbers with named constants.
 6. Avoid encodings. Don't append prefixes or type information.
+
+
+Reveal your intent through names.
+
+Variable name length are proportional to the scope size.
+
+    If a variable is in a small scope, small name is preffered.
+    Long variable name in long scopes for better understanding of the use. 
+
+But it will be opposite for Functions name:
+
+Function names are inversely proportional to the scope size.
+
+     Large scope function means it will be used more frequently, so smaller name
+     is preffered.
+  
+Name of classes is similar as functions.
 
 
 ## Functions rules
@@ -114,7 +72,8 @@ No Side Effects / Using Lambda
 
 No Side Effects / Command and Query Separation
 
-    Convention: Anything that returns a value by default they does not change the system.
+    Convention: Anything that returns a value by default they does not change 
+    the system.
     Whoever returns void changes the system.
   
 No Side Effects / Prefer Exceptions to returning error codes
@@ -123,9 +82,6 @@ No Side Effects / Prefer Exceptions to returning error codes
 
 
 ## Comments rules
-Perpose is to explain the code if the code can't explain itself.
-Comments are good but not pure good.
-Comments are actually failure, failure to make the code express itself. They should be used as a last attemp to explain the code.
 1. Always try to explain yourself in code.
 2. Don't be redundant.
 3. Don't add obvious noise.
@@ -135,10 +91,80 @@ Comments are actually failure, failure to make the code express itself. They sho
 7. Use as clarification of code.
 8. Use as warning of consequences.
 
+Purpose is to explain the code if the code can't explain itself.
+
+Comments are good but not pure good.
+
+Comments are actually failure, failure to make the code express itself. 
+
+They should be used as a last atempt to explain the code.
+
+
 Formatting
 
 File size is not a function of project size.
 
+
+#### Long code is not Good Code
+#### DRY Principle (Don't Repeat Yourself)
+#### Expectations / We will Not Ship Shit.
+    Before uploading some code in the internet or publishing something, we should 
+    make sure that the code works.
+#### We will always be ready.
+#### Stable Productivity.
+#### Inexpensive Adaptability / The software must be changeable.
+    Software = Soft + Ware(=Product) = Changable product.
+    Softwares should be easy to change.
+    If it is not easy, then it is just an another form of Hardware.
+#### Continuous Improvement / The code should improve over time.
+    Over time the code/design/system should improve, if not, then it's bad.
+#### Fearless Competence / Conquer the fear with Test.
+    Do not hesitate to use/update others code, we should clean the mess if it has 
+    any, doesn't matter who created that. Unless that system/software will rot.
+    
+    We should conqure this fear with test.
+#### We will not dump on QA / QA will find nothing.
+    QA should not find nothing, as the programmers should ensure that everything 
+    works fine.
+    We should do "Automation" for testing.
+#### We cover for each other / Teamwork.
+    Pairing (Pair Programming)
+#### Honest Estimates
+    Estimations can be of 3 types: Best Case, Normal Case, Worst Case.
+    We should cosider everything.
+###### You to say "No".
+    If you have given a task with a time that is not enough to do it properly,
+    then you should be able to say "NO", you must say "NO".
+
+#### Selection, Secuence and Interaction / No innovations have been made in the software for decades.
+    All new programming language follow the same pattern for a very long time:
+    Selection, Secuence and Interaction. 
+    
+## TDD (Test Driven Development)
+    It is a very rich topic.
+    In simple words: Write the test first (oviously the test will fail) and then
+    make your code to pass the test. Repeat this for every test that comes to mind.
+    
+    Do not try to use the method just after knowing it, you may fail and find it
+    frustrating.
+    Learn the skills externally. Master the skills.
+    Then use that into your work.
+
+## Design rules
+1. Keep configurable data at high levels.
+2. Prefer polymorphism to if/else or switch/case.
+3. Separate multi-threading code.
+4. Prevent over-configurability.
+5. Use dependency injection.
+6. Follow Law of Demeter. A class should know only its direct dependencies.
+
+## Understandability tips
+1. Be consistent. If you do something a certain way, do all similar things in the same way.
+2. Use explanatory variables.
+3. Encapsulate boundary conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.
+4. Prefer dedicated value objects to primitive type.
+5. Avoid logical dependency. Don't write methods which works correctly depending on something else in the same class.
+6. Avoid negative conditionals.
 
 
 ## Source code structure
@@ -178,8 +204,3 @@ File size is not a function of project size.
 4. Needless Complexity.
 5. Needless Repetition.
 6. Opacity. The code is hard to understand.
-
-
-
-
-
